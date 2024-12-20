@@ -1,0 +1,92 @@
+
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Form styles */
+        form {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border 0.3s ease;
+        }
+        input:focus {
+            border: 2px solid #6a11cb;
+            outline: none;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Password result styling */
+        .password-result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffde03;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            word-wrap: break-word;
+        }
+
+        /* Typing animation styles */
+        .animated-text {
+            font-size: 1.3em;
+            margin-top: 20px;
+            height: 30px;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #fff;
+            display: inline-block;
+            animation: blink 0.7s steps(2) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    

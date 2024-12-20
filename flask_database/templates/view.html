@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Passwords</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Saved Passwords</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Account</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for password in passwords %}
+            <tr>
+                <td>{{ password.id }}</td>
+                <td>{{ password.account }}</td>
+                <td>{{ password.pwd }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
